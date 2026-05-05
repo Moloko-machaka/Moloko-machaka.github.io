@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moloko Machaka | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header>
+    <nav>
+        <h2 class="logo">Moloko Machaka</h2>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="about-pic">
+        <img src="assets/profile.jpg" alt="Moloko Machaka">
+    </div>
+    <h1>Hello, I'm <span class="highlight">Moloko Machaka</span></h1>
+    <p>Aspiring Cloud & Network Engineer | Web Developer | Cybersecurity Enthusiast</p>
+
+    <p class="intro-text">
+        I am a third year student and a passionate technology enthusiast who is focused on cloud computing, networking,
+        and web development. I enjoy building practical projects, from Cisco network
+        designs to cloud deployments and beginner-friendly web apps.
+    </p>
+<br>
+    <div class="hero-btns">
+        <a href="assets/Machaka%20Moloko%20CV%202025.pdf" class="btn cv-btn" download>Download CV</a>
+       <!-- <a href="#live-now" class="btn">View Live Now</a>-->
+    </div>
+</section>
+
+<!-- Live Now Section -->
+<!--<section id="live-now" class="live-now">
+    <h2>👀 Live Now</h2>
+    <p>There are <span id="live-count">0</span> people currently visiting my portfolio.</p>
+</section>-->
+
+<!-- Highlights / Short Intro -->
+ <!--<section class="intro">
+    <h2>About Me in Short</h2>
+    <p>
+        I am a third year student and a passionate technology enthusiast who is focused on cloud computing, networking,
+        and web development. I enjoy building practical projects, from Cisco network
+        designs to cloud deployments and beginner-friendly web apps.
+    </p>
+    <p>
+        Explore my projects and certifications to see what I’m working on and my learning journey.
+    </p>
+</section>
+
+<!-Footer -->
+<!--<footer>
+    <h3>Contact Me</h3>
+    <p>Email: machakamoloko2@gmail.com</p>
+    <p>LinkedIn: your-linkedin</p>
+    <p>GitHub: your-github</p>
+    <p>© 2025 Moloko Machaka</p>
+</footer>-->
+<div id="footer"></div>
+
+<script>
+    fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        });
+</script>
+
+<!--<script src="script.js"></script>-->
+</body>
+</html>

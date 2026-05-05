@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skills</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <nav>
+    <h2 class="logo">Moloko Machaka</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-section">
+<div class="tech-stack">
+  <h1>Tech Stack</h1>
+  <p class="subtitle">Tools and technologies I use to build real-world solutions</p>
+
+  <div class="filters">
+    <button class="active" onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('frontend')">Frontend</button>
+    <button onclick="filterSelection('backend')">Backend</button>
+    <button onclick="filterSelection('database')">Database</button>
+    <button onclick="filterSelection('devops')">DevOps</button>
+    <button onclick="filterSelection('tools')">Design & Tools</button>
+    <button onclick="filterSelection('cyber')">Cybersecurity</button>
+  </div>
+
+  <div class="tech-grid">
+
+    <div class="tech-card frontend"><img src="assets/logos/html.jpeg"><p>HTML</p></div>
+    <div class="tech-card frontend"><img src="assets/logos/css.jpeg"><p>CSS</p></div>
+    <div class="tech-card frontend"><img src="assets/logos/js.jpeg"><p>JavaScript</p></div>
+
+    <div class="tech-card backend"><img src="assets/logos/php.jpeg"><p>PHP</p></div>
+    <div class="tech-card backend"><img src="assets/logos/C++.jpeg"><p>C++</p></div>
+    <div class="tech-card backend"><img src="assets/logos/C%23.jpeg"><p>C#</p></div>
+    <div class="tech-card backend"><img src="assets/logos/java.jpeg"><p>Java</p></div>
+
+    <div class="tech-card database"><img src="assets/logos/mysql.jpeg"><p>MySQL</p></div>
+
+    <div class="tech-card devops"><img src="assets/logos/linux.jpeg"><p>Linux</p></div>
+
+    <div class="tech-card tools"><img src="assets/logos/git.jpeg"><p>Git</p></div>
+    <div class="tech-card tools"><img src="assets/logos/phpstorm.jpeg"><p>PhpStorm</p></div>
+    <div class="tech-card tools"><img src="assets/logos/xampp.jpeg"><p>XAMPP</p></div>
+    <div class="tech-card tools"><img src="assets/logos/vsCode.jpeg"><p>Visual Studio Code</p></div>
+    <div class="tech-card tools"><img src="assets/logos/vs.jpeg"><p>Microsoft Visual Studio</p></div>
+    <div class="tech-card tools"><img src="assets/logos/cisco.png"><p>Packet Tracer</p></div>
+
+    <div class="tech-card cyber"><img src="assets/logos/tryhackme.jpeg"><p>TryHackMe</p></div>
+  </div>
+</div>
+
+  <div class="professional-skills page-section">
+    <h2>Professional Skills</h2>
+
+    <div class="softskills-grid">
+      <div class="soft-card">Communication</div>
+      <div class="soft-card">Teamwork</div>
+      <div class="soft-card">Problem Solving</div>
+      <div class="soft-card">Adaptability</div>
+      <div class="soft-card">Time Management</div>
+      <div class="soft-card">Customer Service</div>
+      <div class="soft-card">Numerical skills</div>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById("footer").innerHTML = data;
+          });
+</script>
+</body>
+</html>

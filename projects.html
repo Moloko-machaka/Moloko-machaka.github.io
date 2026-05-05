@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Moloko Machaka</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header>
+  <nav>
+    <h2 class="logo">Moloko Machaka</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Projects Section -->
+<br>
+<br>
+  <!-- Project 3 -->
+<section class="projects page-section">
+  <h2>Featured Projects</h2>
+
+  <!-- ADD THIS WRAPPER -->
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Enterprise Network Design (Multi-Site)</h3>
+      <p>
+        Designed and simulated a multi-site enterprise network with VLAN segmentation, OSPF routing,
+        NAT configuration, and DHCP services using Cisco Packet Tracer.
+      </p>
+
+      <div class="project-tags">
+        <span>VLANs</span>
+        <span>OSPF</span>
+        <span>NAT</span>
+        <span>DHCP</span>
+        <span>ACLs</span>
+      </div>
+
+      <div class="project-buttons">
+        <a href="assets/projects/network-project.pkt" download>Download Project</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        Personal portfolio website built using HTML and CSS to showcase my projects,
+        skills, and certifications.
+      </p>
+
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Responsive Design</span>
+      </div>
+
+      <div class="project-buttons">
+        <a href="https://github.com/EliteXinternship.git" target="_blank" class="btn primary">
+          View Code
+        </a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <h3>Cybersecurity Learning Journey (TryHackMe)</h3>
+
+      <span class="status in-progress">🚧 In Progress</span>
+
+      <p>
+        Actively developing practical cybersecurity skills through hands-on labs on TryHackMe,
+        focusing on network security, system vulnerabilities, and penetration testing fundamentals.
+      </p>
+
+      <div class="project-tags">
+        <span>Cybersecurity</span>
+        <span>TryHackMe</span>
+        <span>Networking</span>
+      </div>
+
+      <div class="project-buttons">
+        <a href="https://tryhackme.com/p/princesshxcker25" target="_blank" class="btn primary">
+          🔗 View Profile
+        </a>
+      </div>
+    </div>
+
+  </div> <!-- END container -->
+
+</section>
+
+
+
+<!-- Footer -->
+<!--<footer>
+  <h3>Contact Me</h3>
+  <p>Email: your-email@example.com</p>
+  <p>LinkedIn: your-linkedin</p>
+  <p>GitHub: your-github</p>
+  <p>© 2025 Moloko Machaka</p>
+</footer>-->
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById("footer").innerHTML = data;
+          });
+</script>
+
+<!--<script src="script.js"></script>-->
+</body>
+</html>

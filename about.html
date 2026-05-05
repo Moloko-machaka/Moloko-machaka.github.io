@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Moloko Machaka</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header / Navbar -->
+<header>
+  <nav>
+    <h2 class="logo">Moloko Machaka</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- About Me Section -->
+<section class="page-section">
+  <br>
+  <br>
+  <h1>About Me</h1>
+  <div class="about-container">
+    <!-- Your Picture -->
+    <!-- <div class="about-pic">
+      <img src="assets/profile.jpg" alt="Moloko Machaka">
+    </div>-->
+    <br>
+  <p>
+    I am a passionate technology enthusiast focused on cloud computing, networking, and web development based in
+    Gauteng, South Africa, focused on building a career in cloud computing, networking and web development. I enjoy
+    building practical projects from Cisco network designs to cloud deployments and beginner-friendly web apps.
+    </p>
+   <!-- <p>
+    With a strong foundation in networking concepts and hands-on experience in tools like Packet Tracer, MySQL, and
+    Linux environments, I’m continuously developing my skills across both infrastructure and software. I’m particularly
+    interested in how cloud technologies and modern web solutions can work together to solve real-world problems.
+  </p>
+  <p>
+    I’m also expanding my knowledge in cybersecurity through hands-on platforms like TryHackMe, where I’m building
+    practical skills and strengthening my understanding of secure systems.
+  </p>-->
+  </div>
+
+  <div class="aboutskill-container">
+    <div class="aboutskill-card">
+      <span class="icon">🌐</span>
+      <h3>Networking</h3>
+      <p>Experience with VLANs, OSPF, NAT and network design.</p>
+    </div>
+
+    <div class="aboutskill-card">
+      <span class="icon">☁️</span>
+      <h3>Cloud Computing</h3>
+      <p>Working with cloud deployments and modern infrastructure.</p>
+    </div>
+
+    <div class="aboutskill-card">
+      <span class="icon">💻</span>
+      <h3>Web Development</h3>
+      <p>Building responsive and beginner-friendly web applications.</p>
+    </div>
+  </div>
+
+  <h3>Currently Learning</h3>
+  <br>
+
+  <div class="learning-container">
+    <div class="learning-card">
+      <span class="icon">🔐</span>
+      <h3>Cybersecurity</h3>
+      <p>
+        Actively building hands-on cybersecurity skills through TryHackMe,
+        focusing on network security, system vulnerabilities, and practical labs.
+      </p>
+    </div>
+  </div>
+
+  <div class="certifications page-section">
+    <h2>Certification Progress</h2>
+
+
+    <div class="cert-card">
+      <p>Azure AZ-900</p>
+      <div class="progress">
+        <div class="progress-fill" style="width: 40%;"></div>
+      </div>
+      <span class="percent">40%</span>
+    </div>
+
+    <div class="cert-card">
+      <p>Linux Essentials / LFCS</p>
+      <div class="progress">
+        <div class="progress-fill" style="width: 60%;"></div>
+      </div>
+      <span class="percent">60%</span>
+    </div>
+
+    <div class="cert-card">
+      <p>Cisco CCNA</p>
+      <div class="progress">
+        <div class="progress-fill" style="width: 30%;"></div>
+      </div>
+      <span class="percent">30%</span>
+    </div>
+  </div>
+
+  <div class="completed-certs page-section">
+    <h2>Completed Certifications</h2>
+
+    <div class="cert-item">
+      <h3>FNB App Academy</h3>
+      <p class="org">FNB</p>
+      <ul>
+        <li>Completed: 12/07/2025</li>
+        <li>Gained foundational knowledge in HTML, CSS, JavaScript, Python, and Agile problem-solving</li>
+      </ul>
+
+      <div class="cert-buttons">
+        <a href="assets/certificate/fnb-certificate.pdf" target="_blank" class="btn view">View</a>
+        <a href="assets/certificate/fnb-certificate.pdf" download class="btn download">Download</a>
+      </div>
+    </div>
+
+    <div class="cert-item">
+      <h3>Microsoft AI Fluency Course</h3>
+      <p class="org">Microsoft</p>
+      <ul>
+        <li>Completed: 07/05/2025</li>
+        <li>Gained foundational knowledge in AI concepts and real-world applications</li>
+      </ul>
+
+      <div class="cert-buttons">
+        <a href="assets/certificate/microsoft-ai.png" target="_blank" class="btn view">View</a>
+        <a href="assets/certificate/microsoft-ai.png" download class="btn download">Download</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+          .then(res => res.text())
+          .then(data => {
+            document.getElementById("footer").innerHTML = data;
+          });
+</script>
+
+<!--<script src="script.js"></script>-->
+</body>
+</html>
